@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff;
+    background-color: #ffa600cc;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #a2d9ce;
+    background-color: #ffffff;
     padding: 10px;
   }
   
@@ -30,7 +30,7 @@ body {
   }
   
   .nav {
-    background-color: #a2d9ce;
+    background-color: #ffffff;
     display: flex;
   }
   
@@ -46,47 +46,9 @@ body {
     background-color: #ddd;
   }
   
-  .carousel {
-    text-align: center;
-    position: relative;
-    margin: 20px 0;
-  }
-  
-  .carousel .phone {
-    display: inline-block;
-    position: relative;
-  }
-  
-  .carousel img {
-    width: 200px;
-    margin: 0 15px;
-  }
-  
-  .carousel span {
-    cursor: pointer;
-    font-size: 2em;
-    user-select: none;
-  }
-  
-  .discount-tag, .price-tag {
-    position: absolute;
-    color: white;
-    background-color: red;
-    padding: 5px;
-    font-size: 18px;
-  }
-  
-  .discount-tag {
-    transform: rotate(-20deg);
-  }
-  
-  .old-price {
-    text-decoration: line-through;
-  }
-  
   .footer {
     margin-top: auto;
-    background-color: #a2d9ce;
+    background-color: #ffffff;
     padding: 20px;
     text-align: center;
   }
@@ -100,4 +62,3 @@ body {
     text-decoration: none;
     margin: 0 5px;
   }
-  
