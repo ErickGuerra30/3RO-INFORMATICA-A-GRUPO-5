@@ -54,12 +54,15 @@ body {
 .login-box input[type="submit"] {
     background-color: #F88D49; 
     color: white; 
+    padding: 2.5%;
+    width: 30%;
     border: none; 
     cursor: pointer; 
 }
 
 .login-box input[type="submit"]:hover {
     background-color: #f58139; 
+    
 }
 
 .welcome-box {
@@ -68,7 +71,6 @@ body {
     margin-bottom: 5px; 
     border-radius: 6px;
     width: 100%; 
-    
 }
 
 
