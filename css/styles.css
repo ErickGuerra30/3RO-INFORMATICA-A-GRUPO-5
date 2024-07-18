@@ -1,13 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f8ff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header, .footer {
+  width: 100%;
+  position: fixed;
+}
+
+.header {
+  top: 0;
+}
+
+.footer {
+  bottom: 0;
+}
   .header {
     display: flex;
     justify-content: space-between;
