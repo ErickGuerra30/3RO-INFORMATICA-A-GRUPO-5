@@ -20,6 +20,7 @@ body {
 .footer {
   bottom: 0;
 }
+
   .header {
     display: flex;
     justify-content: space-between;
