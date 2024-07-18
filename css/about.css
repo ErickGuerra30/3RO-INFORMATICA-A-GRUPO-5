@@ -27,3 +27,9 @@ body {
     margin: 0 10px;
     text-align: center;
 }
+
+.vision h2, .mision h2 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
