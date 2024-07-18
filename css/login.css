@@ -8,14 +8,11 @@ body {
     min-height: 100vh;
     
   }
-.headerLogin a img {
-    height: 40px;
-    margin-right: 1px;
-    margin-top: 1px;
-  }
-.headerLogin a {
-    margin: 0 ;
-    flex: 1;
+  
+.login-box a img {
+    height: 10px;
+    margin-right: 500px;
+    margin-top: 0px;
     text-align: left;
     display: flex;
     align-items: center;
