@@ -33,3 +33,16 @@ body {
     margin-bottom: 10px;
 }
 
+.vision p, .mision p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .vision, .mision {
+        margin: 10px 0;
+    }
+}
