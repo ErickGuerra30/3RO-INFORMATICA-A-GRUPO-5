@@ -6,8 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
-  }
+}
 .login-box a img {
     height: 10px;
     margin-right: 500px;
@@ -15,65 +14,56 @@ body {
     text-align: left;
     display: flex;
     align-items: center;
-  }
-.container {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 100%; 
-    max-width: 1500px; 
-    padding: 50px;  
 }
-
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    padding: 50px;
+}
 .login-box {
-    background-color: #ffffff; 
-    border: 1px solid #ccc; 
+    background-color: #ffffff;
+    border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    
 }
 .login-box h2 {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
-
 .login-box input[type="email"],
 .login-box input[type="password"],
 .login-box input[type="submit"] {
-    width: 80%; 
-    padding: 10px; 
-    margin: 10px 0; 
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
-
 .login-box input[type="submit"] {
-    background-color: #F88D49; 
-    color: white; 
+    background-color: #F88D49;
+    color: white;
     padding: 2.5%;
     width: 30%;
-    border: none; 
-    cursor: pointer; 
+    border: none;
+    cursor: pointer;
 }
-
 .login-box input[type="submit"]:hover {
-    background-color: #f58139; 
-    
+    background-color: #f58139;
 }
-
 .welcome-box {
-    background-color: #e9884b; 
+    background-color: #e9884b;
     padding: 0.011%;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
     border-radius: 6px;
-    width: 100%; 
-    
+    width: 100%;
 }
 .logo1-img {
-    max-height: 700px; 
-    width: auto; 
-    display: block; 
+    max-height: 700px;
+    width: auto;
+    display: block;
 }
-
 
