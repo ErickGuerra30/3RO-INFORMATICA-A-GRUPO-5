@@ -4,8 +4,7 @@
 }
 
 body{
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background: linear-gradient(to right, #e2e2e2, #f8ead2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,8 +98,7 @@ body{
 
 .toggle{
     font-family: "Riffic";
-    font-style: bold;
-    font-weight: 250px;
+    font-size: x-large;
     height: 100%;
     background: linear-gradient(to right, #f5a022, #f5a022 );
     color: #ffffff; 
@@ -126,3 +124,9 @@ body{
 .toggle-right{
     right: 0; 
 }
+.img  {
+    position: absolute; 
+    top: 5px; 
+    left: 10px;
+  }
+  
