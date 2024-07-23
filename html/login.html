@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Página de Login</title>
     <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-<div class="container">
-    <div class="login-box">
-        <a href="../index.html">
-            <img src="../img/flecha_menor_icon.png" alt="FLECHA" style="height: 20px;">
-        </a>
-        <h1>
-            <img src="../img/LOGO_PHONEHUB.jpg" alt="Phone Hub" style="height: 50px;">
-        </h1>
-        <div class="welcome-box">
-            <h2>Welcome!</h2>
+
+    <div class="container" id="container">
+
+        <div class="form-container sign-in">
+            <form>
+                <img src = "../img/LOGO_PHONEHUB.jpg" height="50px"> 
+                <br>
+                <input type="email" placeholder="Email"> 
+                <br>
+                <input type="password" placeholder="Password">
+                <br>
+                <button>Sign In</button>
+            </form>
         </div>
-        <input type="email" name="email" placeholder="Correo electrónico" required>
-        <br>
-        <input type="password" name="password" placeholder="Contraseña" required>
-        <br>
-        <input type="submit" value="Login">
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-right">
+                    <h1>HELLO, FRIEND</h1>
+                    <p>Register with your personal details to use all of site feat</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <a class="logo1-img">
-        <img src="../img/imagen1_icon.png" alt="LOGO1" style="height: 600px;">    
-    </a>
-</div>
+
+    <script src="../scripts/login.js"></script>
 </body>
+
 </html>
