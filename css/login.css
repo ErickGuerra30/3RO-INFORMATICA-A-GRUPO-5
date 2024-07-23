@@ -1,3 +1,8 @@
+@font-face{
+    font-family: "Riffic";
+    src:url(../font/RifficFree-Bold.ttf)
+}
+
 body{
     background-color: #c9d6ff;
     background: linear-gradient(to right, #e2e2e2, #c9d6ff);
@@ -32,7 +37,8 @@ body{
 }
 
 .container button{
-    background-color: #EBA842;
+    font-family: "Riffic";
+    background-color: #ff9900e7;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -92,10 +98,12 @@ body{
 }
 
 .toggle{
-    background-color: #EBA842;
+    font-family: "Riffic";
+    font-style: bold;
+    font-weight: 250px;
     height: 100%;
-    background: linear-gradient(to right, #EBA842, #EBA842);
-    color: #ffffff;
+    background: linear-gradient(to right, #f5a022, #f5a022 );
+    color: #ffffff; 
     position: relative;
     left: -86%;
     height: 100%;
