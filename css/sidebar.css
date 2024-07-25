@@ -50,12 +50,12 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.details .name{
+.details .Name{
     font-size: 14px;
     font-weight: 600;
     color: #333;
 }
-.details .job{
+.details .Job{
     font-size: 12px;
     font-weight: 400;
     color: #333;
