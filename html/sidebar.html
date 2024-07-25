@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PRUEBA SIDEBAR</title>
 <link rel="stylesheet" href="../css/sidebar.css">
-
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
 </head>
-<body>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <body>
     <section class= "container">
-    <div class= "testimonial">
-        <div class= "testi-content">
-            <div class= "slide">
+    <div class= "testimonial mySwiper">
+        <div class= "testi-content swiper-wrapper">
+            <div class= "slide swiper-slide">
                 <img src="../img/APanchana.jpg" alt="" class="image"/>   
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum provident debitis reprehenderit quasi quas fuga eaque architecto cum ullam voluptatem nam, recusandae, accusamus sapiente illo doloremque eum, sunt placeat ex!
@@ -26,8 +26,14 @@
                 </div>
             </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
     </section>
+
+    <script src="../scripts/swiper-bundle.min.js"></script>
     
-<script src="js/sidebar.js"></script>
-</body>
+    <script src="js/sidebar.js"></script>
+ </body>
+</html>
