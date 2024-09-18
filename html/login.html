@@ -17,7 +17,7 @@
                 <br>
                 <input type="email" placeholder="Email"> 
                 <br>
-                <input type="password" placeholder="Password">
+                <input type="password" name="txtpassword" id="txtpassword" placeholder="Password">
                 <br>
                 <button>Sign In</button>
             </form>
@@ -30,7 +30,12 @@
             </div>
         </div>
     </div>
-    <script src="scripts.js"></script>
+    <script>
+        function verpassword(){
+            var tipo = document.getElementById("txtpassword");
+            tipo.type = (tipo.type === "password") ? "text" : "password";
+        }
+    </script>
 </body>
 
 </html>
