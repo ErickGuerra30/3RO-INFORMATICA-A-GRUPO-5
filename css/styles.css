@@ -20,16 +20,20 @@ body{
     overflow-x: hidden;
     background-color: white;
     color: white;
+    min-height: 100vh; 
+    padding-top: 70px;
+    padding-bottom: 60px; 
+    display: flex;
 }
 
 header{
-    margin-top: 20px;
+    background-color: #ffffff;
+    margin-top: 0px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 1rem 9%;
-    background-color: transparent;
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
@@ -63,7 +67,7 @@ nav a.active{
 
 .footer {
     width: 100%;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     border-top: 2px solid #EBA842;
@@ -75,7 +79,7 @@ nav a.active{
 .footer p {
     margin: 5px 0;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.5rem;  
 }
   
 .footer a {
