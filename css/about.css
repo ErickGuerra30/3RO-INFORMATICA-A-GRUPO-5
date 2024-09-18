@@ -1,3 +1,7 @@
+@font-face{
+  font-family: "Riffic";
+  src:url(../font/RifficFree-Bold.ttf)
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -80,11 +84,14 @@ body {
   .container h2 {
     color: #EBA842;
     margin-bottom: 10px;
+    font-family: "Riffic";
   }
   
   .container p {
-    line-height: 1.6;
+    line-height: 2;
     margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    
   }
   
   .footer {

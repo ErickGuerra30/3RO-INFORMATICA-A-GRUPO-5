@@ -1,0 +1,67 @@
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.product {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 10px; 
+    width: 45%; /*ARREGLAR AQUI SIRVE PARA MOVER TODO de izq-der*/
+}
+
+.product img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.product-card {
+    background-color: #f1af83;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex; 
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.product-info {
+    flex: 3; 
+    text-align: left;
+}
+
+.product-info h2 {
+    font-size: 1.5rem;
+    color: #007aff;
+    margin-bottom: 10px;
+}
+
+.storage-options, .specifications {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.storage-options li, .specifications li {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+h2 {
+    color: #007aff;
+}
+
+.specifications ul {
+    padding-left: 20px;
+}
+.storage-options {
+    margin-bottom: 20px;
+}
+
+.specifications li {
+    line-height: 1.5;
+}
