@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../css/encabezado.css">
     <link rel="stylesheet" href="../css/contact.css">
 </head>
+
 <body>
     <header>
         <a href="index.html">
@@ -17,78 +19,77 @@
             <a href="../html/catalogue.html">Catalogue</a>
             <a href="../html/about.html">About</a>
             <a href="../html/contact.html" class="active">Contact</a>
-            <a href="../html/login.html" id="login">Login</a>
         </nav>
+        <a href="../html/login.html" id="login"></a>
+        <img src="../img/login_icon.png" alt="Login">
+        </a>
     </header>
 
-<main>
-    <section class="container">
-        <form id="contactForm" method="post">
-            <div class="form-row">
-                <div class="form-group half-width">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+    <main>
+        <section class="container">
+            <form id="contactForm" method="post">
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
                 </div>
-                <div class="form-group half-width">
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" required>
+                <div class="form-group full-width">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
                 </div>
-            </div>
-            <div class="form-group full-width">
-                <label for="correo">Correo:</label>
-                <input type="email" id="correo" name="correo" required>
-            </div>
-            <div class="form-row">
-                <div class="form-group half-width">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required>
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="cedula">Cédula:</label>
+                        <input type="text" id="cedula" name="cedula" required>
+                    </div>
                 </div>
-                <div class="form-group half-width">
-                    <label for="cedula">Cédula:</label>
-                    <input type="text" id="cedula" name="cedula" required>
+                <div class="form-group full-width">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
                 </div>
+                <div class="form-group full-width">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8993518156967!2d-79.8843011598305!3d-2.1918067372970724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6ddfa0a7ad79%3A0x2d84f845fc82c600!2sAv.%209%20de%20Octubre%2C%20090313%20Guayaquil!5e0!3m2!1ses!2sec!4v1721542512025!5m2!1ses!2sec"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <div class="form-group full-width">
-                <label for="direccion">Dirección:</label>
-                <input type="text" id="direccion" name="direccion" required>
-            </div>
-            <div class="form-group full-width">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-            </div>
-            <div class="form-group full-width">
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
-        <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8993518156967!2d-79.8843011598305!3d-2.1918067372970724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6ddfa0a7ad79%3A0x2d84f845fc82c600!2sAv.%209%20de%20Octubre%2C%20090313%20Guayaquil!5e0!3m2!1ses!2sec!4v1721542512025!5m2!1ses!2sec" 
-                width="100%" 
-                height="300" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-        
-    </section>
-</main>
 
-<footer class="footer">
-    <p>Contact us: example@gmail.com | +123 456 7890</p>
-    <p>
-        <a href="https://twitter.com">
-            <img src="../img/twitter_icon.png" alt="Twitter" style="height: 20px;">
-        </a> |
-        <a href="https://instagram.com">
-            <img src="../img/instagram_icon.png" alt="Instagram" style="height: 20px;">
-        </a> |
-        <a href="https://facebook.com">
-            <img src="../img/facebook_icon.png" alt="Facebook" style="height: 20px;">
-        </a>
-    </p>
-</footer>
-<script src="../scripts/about.js"></script>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Contact us: example@gmail.com | +123 456 7890</p>
+        <p>
+            <a href="https://twitter.com">
+                <img src="../img/twitter_icon.png" alt="Twitter" style="height: 20px;">
+            </a> |
+            <a href="https://instagram.com">
+                <img src="../img/instagram_icon.png" alt="Instagram" style="height: 20px;">
+            </a> |
+            <a href="https://facebook.com">
+                <img src="../img/facebook_icon.png" alt="Facebook" style="height: 20px;">
+            </a>
+        </p>
+    </footer>
+    <script src="../scripts/about.js"></script>
 </body>
+
 </html>

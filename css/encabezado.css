@@ -48,10 +48,13 @@ header a img {
     margin-right: 10px;
     margin-left: -80px;
 }
-
 #login{
-    margin-right: 0px;
-    margin-left: 150px;
+    height: 28px;
+    margin-right: -120px;
+    margin-left: 0px;
+}
+#login img{
+    height: 28px;
 }
 nav a{
     font-size: 1.8rem;
