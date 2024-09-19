@@ -65,13 +65,13 @@ body {
 }
 
 
-#shigaraki {
+#Xiamo-13 {
     background-image: url(../img/XIAOMI-NOTE-13-PRO.png);
     background-size: cover;
     animation-delay: -1s;
 }
 
-#shigaraki:hover {
+#Xiamo-13:hover {
     box-shadow: 0px 0px 10px rgb(225, 0, 255);
 }
 
