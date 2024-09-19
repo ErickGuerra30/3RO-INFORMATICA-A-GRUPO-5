@@ -1,115 +1,209 @@
-@font-face{
+@font-face {
   font-family: "Riffic";
-  src:url(../font/RifficFree-Bold.ttf)
+  src: url(../font/RifficFree-Bold.ttf);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    padding-top: 70px; 
-    padding-bottom: 60px; 
-    background-color: #f0f8ff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  .header, .footer {
-    width: 100%;
-    position: fixed;
-    left: 0;
-  }
-  
-  .header {
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 10px;
-    border-bottom: 2px solid #EBA842;
-  }
-  
-  .header h1 {
-    margin: 0;
-    flex: 1;
-    text-align: left;
-    display: flex;
-    align-items: center;
-  }
-  
-  .header h1 img {
-    height: 50px;
-    margin-right: 10px;
-  }
-  
-  .nav {
-    display: flex;
-  }
-  
-  .nav a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    margin-right: 10px;
-  }
-  
-  .nav a:last-child {
-    margin-right: 0;
-  }
-  
-  .nav a:hover {
-    background-color: #ddd;
-  }
-  
-  .container-wrapper {
-    display: flex;
-    justify-content: space-around; 
-    gap: 2cm; 
-    padding: 20px;
-    flex-wrap: wrap; 
-  }
-  
-  .container {
-    background-color: #ffffff; 
-    padding: 20px;
-    max-width: 40%; 
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
-    box-sizing: border-box; 
-  }
-  
-  .container h2 {
-    color: #EBA842;
-    margin-bottom: 10px;
-    font-family: "Riffic";
-  }
-  
-  .container p {
-    line-height: 2;
-    margin-bottom: 20px;
-    color: rgb(0, 0, 0);
-    
-  }
-  
-  .footer {
-    bottom: 0;
-    border-top: 2px solid #EBA842;
-    background-color: #ffffff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .footer p {
-    margin: 5px 0;
-  }
-  
-  .footer a {
-    color: black;
-    text-decoration: none;
-    margin: 0 5px;
-  }
-  
-  
+  margin: 0;
+  padding: 0;
+  padding-top: 70px; /* Espacio para el header */
+  padding-bottom: 60px; /* Espacio para el footer */
+  background-color: #f0f8ff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header, .footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 1000;
+}
+
+.header {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  border-bottom: 2px solid #EBA842;
+}
+
+.header h1 {
+  margin: 0;
+  flex: 1;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.header h1 img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.nav a:last-child {
+  margin-right: 0;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content: center; /* Centra los contenedores horizontalmente */
+  gap: 2cm; /* Espaciado entre los contenedores */
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 1200px; /* Limita el ancho total del contenido */
+  margin: 0 auto; /* Centra el contenido en la página */
+}
+
+.container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+.testimonial {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 30px 20px; /* Ajustado para mejorar el padding */
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f7b56c; /* Borde naranja más suave */
+}
+
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+.slide p {
+  text-align: center;
+  padding: 0 20px; /* Ajustado para mejorar el padding */
+  font-size: 16px; /* Aumentado para mejorar la legibilidad */
+  font-weight: 400;
+  color: #333;
+  line-height: 1.6; /* Aumenta el espacio entre líneas */
+}
+
+.slide .quote-icon {
+  font-size: 30px;
+  color: #f28500; /* Icono de cita naranja */
+}
+
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details .name {
+  font-size: 18px; /* Ajustado para mayor visibilidad */
+  font-weight: 600;
+  color: #f28500; /* Nombre en naranja */
+}
+
+.details .job {
+  font-size: 16px; /* Ajustado para mayor visibilidad */
+  font-weight: 400;
+  color: #666; /* Trabajo en un tono gris */
+}
+
+/* Botones de navegación Swiper */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(242, 133, 0, 0.1); /* Naranja claro */
+  transition: 0.2s;
+  display: block; /* Los botones de navegación siempre visibles */
+}
+
+.nav-btn:hover {
+  background-color: rgba(242, 133, 0, 0.2); /* Naranja más oscuro al pasar el cursor */
+}
+
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: #f28500; /* Iconos de navegación naranjas */
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(242, 133, 0, 0.8); /* Puntos de paginación naranja */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f28500; /* Punto de paginación activo en naranja */
+}
+
+.footer {
+  bottom: 0;
+  border-top: 2px solid #EBA842;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  width: 500px; /* Tamaño fijo de los contenedores */
+  height: auto;
+}
