@@ -1,114 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone Hub</title>
-    <link rel="stylesheet" href="../css/encabezado.css">
-    <link rel="stylesheet" href="../css/about.css">
-    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Hub</title>
+  <link rel="stylesheet" href="../css/encabezado.css">
+  <link rel="stylesheet" href="../css/about.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 </head>
+
 <body>
 
-    <header>
-        <a href="index.html">
-            <img src="../img/LOGO_PHONEHUB.png" alt="Phone Hub" style="height: 45px;">
-        </a>
-        <nav>
-            <a href="../index.html">Offers</a>
-            <a href="../html/catalogue.html">Catalogue</a>
-            <a href="../html/about.html" class="active">About</a>
-            <a href="../html/contact.html">Contact</a>
-        </nav>
-        <a href="../html/login.html" id="login">
-          <img src="../img/login_icon.png" alt="Login">
+  <header>
+    <a href="index.html">
+      <img src="../img/LOGO_PHONEHUB.png" alt="Phone Hub" style="height: 45px;">
+    </a>
+    <nav>
+      <a href="../index.html">Offers</a>
+      <a href="../html/catalogue.html">Catalogue</a>
+      <a href="../html/about.html" class="active">About</a>
+      <a href="../html/contact.html">Contact</a>
+    </nav>
+    <a href="../html/login.html" id="login">
+      <img src="../img/login_icon.png" alt="Login">
+    </a>
+  </header>
+
+  <!-- Sección Misión y Visión -->
+  <div class="container-wrapper">
+    <div class="container vision">
+      <h2>Nuestra Visión</h2>
+      <p>Nuestra misión es convertirnos en una de las mejores empresas del mundo en el sector de la telefonía móvil.
+        Ofrecemos la mejor experiencia de compra, proporcionando acceso a nuevas tecnologías, recursos avanzados y las
+        últimas mejoras en dispositivos y accesorios.</p>
+    </div>
+
+    <div class="container mision">
+      <h2>Nuestra Misión</h2>
+      <p>Buscamos ganar una reputación y reconocimiento en el mercado tecnológico gracias a nuestro compromiso de
+        ofrecer siempre lo mejor a nuestros clientes. Facilitamos la accesibilidad y compra de productos, contribuyendo
+        a un futuro con objetivos claros y bases sólidas.</p>
+    </div>
+  </div>
+
+  <!-- Sección SlideVar -->
+  <section class="containerslide">
+    <div class="testimonial mySwiper">
+      <div class="testi-content swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="../img/EGuerra.jpg" alt="" class="image" />
+          <p>
+          Si, soy Guerra, es momento de crear algo nuevo y estas personas son las mejores para el trabajo, ¡Buscamos innovacion, trabajo duro y disfrutar del camino!
+          </p>
+
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+          <div class="details">
+            <span class="name">Erick Guerra</span>
+            <span class="job">CEO</span>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="../img/Dsolis.jpg" alt="" class="image" />
+          <p>
+          Diseñador grafico preparado para todo tipo de desafios, me gustan los videojuegos y disfruto mucho de pasar tiempo en familia, me destaque mucho durante mi epoca de colegio y estoy junto a mi equipo de trabajo listo para una nueva experiencia ¡En esta pagina te ofrecemos el maximo de todo!
+          </p>
+
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+          <div class="details">
+            <span class="name">Diego Solis</span>
+            <span class="job">Diseñador</span>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="../img/APanchana.jpg" alt="" class="image" />
+          <p>
+           El mejor programador del pais, me contacte con Erick y me ofrecio trabajar en un proyecto diferente,  me retire durante un tiempo para enfocarme en mi mismo, ¡Ahora estoy en mi mejor momento listo y preparado para explotar el internet!  
+          </p>
+
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+          <div class="details">
+            <span class="name">Andres Panchana</span>
+            <span class="job">Programador</span>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="../img/MCanchingre.jpg" alt="" class="image" />
+          <p>
+            Programador de la vieja escuela, me he sabido adaptar a los cambios de la programacion y estoy emocionado por explorar nuevos proyectos, disfruto compartir y charlar con amigos, ¡Me he reunido aqui para ofrecer mi mejor faceta!
+          </p>
+
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+          <div class="details">
+            <span class="name">Mathias Canchingre</span>
+            <span class="job">Programador</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Contact us: ejemplo@gmail.com | +593 98 563 1990</p>
+    <p>
+      <a href="https://twitter.com">
+        <img src="../img/twitter_icon.png" alt="Twitter" style="height: 20px;">
+      </a> |
+      <a href="https://instagram.com">
+        <img src="../img/instagram_icon.png" alt="Instagram" style="height: 20px;">
+      </a> |
+      <a href="https://facebook.com">
+        <img src="../img/facebook_icon.png" alt="Facebook" style="height: 20px;">
       </a>
-    </header>
+    </p>
+  </div>
 
-    <!-- Sección Misión y Visión -->
-    <div class="container-wrapper">
-        <div class="container vision">
-            <h2>Nuestra Visión</h2>
-            <p>Nuestra misión es convertirnos en una de las mejores empresas del mundo en el sector de la telefonía móvil. Ofrecemos la mejor experiencia de compra, proporcionando acceso a nuevas tecnologías, recursos avanzados y las últimas mejoras en dispositivos y accesorios.</p>
-        </div>
-
-        <div class="container mision">
-            <h2>Nuestra Misión</h2>
-            <p>Buscamos ganar una reputación y reconocimiento en el mercado tecnológico gracias a nuestro compromiso de ofrecer siempre lo mejor a nuestros clientes. Facilitamos la accesibilidad y compra de productos, contribuyendo a un futuro con objetivos claros y bases sólidas.</p>
-        </div>
-    </div>
-
-    <!-- Sección de Testimonios -->
-    <section class="container testimonial-container">
-        <div class="testimonial mySwiper">
-            <div class="testi-content swiper-wrapper">
-                <div class="slide swiper-slide">
-                    <img src="../img/EGuerra.jpg" alt="Erick Guerra" class="image" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <i class="bx bxs-quote-alt-left quote-icon"></i>
-                    <div class="details">
-                        <span class="name">Erick Guerra</span>
-                        <span class="job">CEO</span>
-                    </div>
-                </div>
-
-                <div class="slide swiper-slide">
-                    <img src="../img/Dsolis.jpg" alt="Diego Solis" class="image" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <i class="bx bxs-quote-alt-left quote-icon"></i>
-                    <div class="details">
-                        <span class="name">Diego Solis</span>
-                        <span class="job">Diseñador</span>
-                    </div>
-                </div>
-
-                <div class="slide swiper-slide">
-                    <img src="../img/APanchana.jpg" alt="Andres Panchana" class="image" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <i class="bx bxs-quote-alt-left quote-icon"></i>
-                    <div class="details">
-                        <span class="name">Andres Panchana</span>
-                        <span class="job">Programador</span>
-                    </div>
-                </div>
-
-                <div class="slide swiper-slide">
-                    <img src="../img/MCanchingre.jpg" alt="Mathias Canchingre" class="image" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <i class="bx bxs-quote-alt-left quote-icon"></i>
-                    <div class="details">
-                        <span class="name">Mathias Canchingre</span>
-                        <span class="job">Programador</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-button-next nav-btn"></div>
-            <div class="swiper-button-prev nav-btn"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <div class="footer">
-        <p>Contact us: ejemplo@gmail.com | +593 98 563 1990</p>
-        <p>
-            <a href="https://twitter.com">
-                <img src="../img/twitter_icon.png" alt="Twitter" style="height: 20px;">
-            </a> |
-            <a href="https://instagram.com">
-                <img src="../img/instagram_icon.png" alt="Instagram" style="height: 20px;">
-            </a> |
-            <a href="https://facebook.com">
-                <img src="../img/facebook_icon.png" alt="Facebook" style="height: 20px;">
-            </a>
-        </p>
-    </div>
-
-    <!-- Scripts -->
-    <script src="../scripts/swiper-bundle.min.js"></script>
-    <script src="../scripts/sidebar.js"></script>
-
+  <!-- Scripts -->
+  <script src="../scripts/swiper-bundle.min.js"></script>
+  <script src="../scripts/sidebar.js"></script>
 </body>
+
 </html>

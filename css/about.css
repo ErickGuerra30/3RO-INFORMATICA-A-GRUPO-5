@@ -21,44 +21,51 @@ body {
   min-height: 100vh;
 }
 
-.header, .footer {
-  width: 100%;
-  position: fixed;
-  left: 0;
-  z-index: 1000;
-}
-
-
-.container-wrapper {
-  display: flex;
-  justify-content: center; /* Centra los contenedores horizontalmente */
+.container-wrapper{
+  display:flex;
+  justify-content: center;
+  gap: 2cm;
   padding: 20px;
   box-sizing: border-box;
-  max-width: 1200px; /* Limita el ancho total del contenido */
-  margin: 0 auto; /* Centra el contenido en la página */
+  max-width: 1200px;
+  margin: 0 auto;
+  color: black;
+  font-size: 13px;
+}
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 40%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 2px solid #eba842;
+}
+.container h2{
+  color: #eba842;
 }
 
-.container {
+.containerslide {
+  max-width: fit-content;
+  height: 100vh;
   width: 100%;
-  max-width: 500px; /* Tamaño máximo de los contenedores */
-  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ffffff; /* Fondo blanco */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadido para una sombra sutil */
+  margin-left: 23%;
+  border-radius: 8px;
+  border: 2px solid #eba842;
 }
 
 .testimonial {
   position: relative;
+  max-width: 900px;
   width: 100%;
-  padding: 30px 20px; /* Ajustado para mejorar el padding */
+  padding: 50px 0;
   overflow: hidden;
   background-color: #ffffff;
   border-radius: 10px;
-  text-align: center; /* Centra el texto dentro de testimonial */
 }
 
 .testimonial .image {
@@ -67,24 +74,24 @@ body {
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #f7b56c; /* Borde naranja más suave */
-  margin: 0 auto; /* Centra la imagen dentro del contenedor */
 }
 
 .testimonial .slide {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   row-gap: 30px;
   height: 100%;
   width: 100%;
-  text-align: center; /* Centra el texto dentro de slide */
 }
 
 .slide p {
-  padding: 0 20px; /* Ajustado para mejorar el padding */
-  font-size: 16px; /* Aumentado para mejorar la legibilidad */
+  text-align: center;
+  padding: 0 160px;
+  font-size: 14px;
   font-weight: 400;
   color: #333;
-  line-height: 1.6; /* Aumenta el espacio entre líneas */
 }
 
 .slide .quote-icon {
@@ -99,13 +106,13 @@ body {
 }
 
 .details .name {
-  font-size: 18px; /* Ajustado para mayor visibilidad */
+  font-size: 16px;
   font-weight: 600;
   color: #f28500; /* Nombre en naranja */
 }
 
 .details .job {
-  font-size: 16px; /* Ajustado para mayor visibilidad */
+  font-size: 14px;
   font-weight: 400;
   color: #666; /* Trabajo en un tono gris */
 }
@@ -118,7 +125,6 @@ body {
   transform: translateY(30px);
   background-color: rgba(242, 133, 0, 0.1); /* Naranja claro */
   transition: 0.2s;
-  display: block; /* Los botones de navegación siempre visibles */
 }
 
 .nav-btn:hover {
@@ -139,30 +145,11 @@ body {
   background-color: #f28500; /* Punto de paginación activo en naranja */
 }
 
-.footer {
-  bottom: 0;
-  border-top: 2px solid #EBA842;
-  background-color: #ffffff;
-  padding: 20px;
-  text-align: center;
-}
-
-.footer p {
-  margin: 5px 0;
-}
-
-.footer a {
-  color: black;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-.container-wrapper {
-  display: flex;
-  justify-content: space-around;
-}
-
-.container {
-  width: 500px; /* Tamaño fijo de los contenedores */
-  height: auto;
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+  .nav-btn {
+    display: none;
+  }
 }
