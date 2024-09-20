@@ -12,12 +12,12 @@
             <a href="../index.html">
                 <img src ="../img/Logo_salir.png" height="50px" class="img">
             </a>
-            <form>
+            <form id = "loginform" onsubmit="return validateform()">
                 <img src= "../img/LOGO_PHONEHUB.png" height="50px"> 
                 <br>
-                <input type="email" placeholder="Email"> 
+                <input type="text" name="txtusuario" id="txtusuario" placeholder="Ingresar Usuario" required> 
                 <br>
-                <input type="password" name="txtpassword" id="txtpassword" placeholder="Password">
+                <input type="password" name="txtpassword" id="txtpassword" placeholder="Password" required>
                 <br>
                 <button>Sign In</button>
             </form>
@@ -31,9 +31,18 @@
         </div>
     </div>
     <script>
-        function verpassword(){
-            var tipo = document.getElementById("txtpassword");
-            tipo.type = (tipo.type === "password") ? "text" : "password";
+        function validateform(){
+            var usuario = document.getElementById("txtusuario").value;
+            var password = document.getElementById("txtpassword").value;
+
+            if(usuario === 'Phonehub' && password === 'Grupo5'){
+                alert("¡Bienvenido a Phonehub!");
+                window.location.href='../index.html';
+                return false;
+            } else{
+                alert("Usuario o contraseña incorrectos.");
+                return false;
+            }
         }
     </script>
 </body>
