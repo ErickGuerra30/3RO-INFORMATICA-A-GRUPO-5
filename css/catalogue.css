@@ -103,6 +103,9 @@ body {
   font-size: 1.1em;
   color: #333;
 }
+.image{
+  transition: transform 0.5s ease;
+}
 
 img.button {
   border-radius: 5px;
