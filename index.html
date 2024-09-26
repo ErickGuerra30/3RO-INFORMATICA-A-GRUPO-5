@@ -7,6 +7,7 @@
   <title>Phone Hub</title>
   <link rel="stylesheet" href="css/encabezado.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -21,21 +22,33 @@
       <a href="../html/contact.html">Contact</a>
     </nav>
     <a href="../html/login.html" id="login">
-      <img src = "../img/login_icon.png" alt="Login">  
-  </a>
+      <img src="../img/login_icon.png" alt="Login">
+    </a>
   </header>
 
   <span id="next"></span>
-  <div class="container">
-		<div class="tarjeta" id="Iphone"><h3>Iphone-15</h3></div>
-		<div class="tarjeta" id="Iphone-14"><h3>Iphone-14</h3></div>
-		<div class="tarjeta" id="S24"><h3>S24-Ultra</h3></div>
-		<div class="tarjeta" id="Tecno"><h3>Tecno-Phantom-V-Fold</h3></div>
-		<div class="tarjeta" id="Xiaomi"><h3>Xiaomi 14 Ultra</h3></div>
-		<div class="tarjeta" id="Infinix"><h3>Infinix Note 40</h3></div>
-		<div class="tarjeta" id="Xiaomi-13"><h3>Xiaomi Note 13</h3></div>
-		<div class="tarjeta" id="Camon"><h3>Camon 30</h3></div>
-	</div>
+  
+  <section class="containerslide">
+    <div class="testimonial mySwiper">
+      <div class="testi-content swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="/img/OFERTA_BANNER.png" alt="" class="image" />
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="img/OFERTA_1.png" alt="" class="image" />
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="img/oferta_2.png" alt="" class="image" />
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+        </div>
+      </div>
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
 
 
   <div class="footer">
@@ -52,6 +65,9 @@
       </a>
     </p>
   </div>
+
+  <script src="../scripts/swiper-bundle.min.js"></script>
+  <script src="../scripts/sidebar.js"></script>
 </body>
 
 </html>

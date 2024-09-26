@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-   
+    background-color: #fff7e8;
     margin: 0;
     padding: 0;
     color: #ff0000;
@@ -11,137 +11,95 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
 }
 
 
-.container {
-    perspective: 250px;
-    width: 300px;
-    height: 150px;
+.containerslide {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff7e8;
+    border-radius: 10px;
+
+}
+
+.testimonial {
+    margin-top: auto;
     position: relative;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 
-.tarjeta {
-    width: 50px;
-    height: 80px;
-    background-color: #EBA842;
-    font-size: 40px;
-    position: absolute;
-    top: 35px;
-    left: 125px;
-    border-radius: 8px;
-    text-align: center;
-    cursor: pointer;
-    animation: Carrusel 8s linear infinite;
+.image {
+    margin-top: 30px;
+    height: auto;
+    width: 70%;
 }
 
-@keyframes Carrusel {
-    from {
-        transform: rotateY(360deg) translateZ(100px);
-        z-index: 10;
-        opacity: 0.9;
+.testimonial .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* Botones de navegación Swiper */
+.nav-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(0px);
+    background-color: rgba(242, 133, 0, 0.1);
+    /* Naranja claro */
+    transition: 0.2s;
+}
+
+.nav-btn:hover {
+    
+    background-color: rgba(242, 133, 0, 0.2);
+    /* Naranja más oscuro al pasar el cursor */
+}
+
+.nav-btn::after,
+.nav-btn::before {
+   
+    font-size: 20px;
+    color: #f28500;
+    /* Iconos de navegación naranjas */
+}
+
+.swiper-pagination-bullet {
+    
+    background-color: rgba(242, 133, 0, 0.8);
+    /* Puntos de paginación naranja */
+}
+
+.swiper-pagination-bullet-active {
+    
+    background-color: #f28500;
+    /* Punto de paginación activo en naranja */
+}
+
+@media screen and (max-width: 768px) {
+    .slide p {
+        padding: 0 20px;
     }
 
-    50% {
-        z-index: -10;
+    .nav-btn {
+        display: none;
     }
-
-    to {
-        transform: rotateX(0deg) translateZ(100px) rotateX(0deg);
-        z-index: 10;
-    }
-
 }
 
-
-#Camon {
-    background-image: url(../img/CAMON-30.png);
-    background-size: cover;
-}
-
-#Camon:hover {
-    box-shadow: 0px 0px 10px yellow;
-}
-
-
-#Xiamo-13 {
-    background-image: url(../img/XIAOMI-NOTE-13-PRO.png);
-    background-size: cover;
-    animation-delay: -1s;
-}
-
-#Xiamo-13:hover {
-    box-shadow: 0px 0px 10px rgb(225, 0, 255);
-}
-
-#infinix {
-    background-image: url(../img/INFINIX\ NOTE\ 40.png);
-    background-size: cover;
-    animation-delay: -2s;
-}
-
-#all_might:hover {
-    box-shadow: 0px 0px 10px rgb(0, 102, 255);
-}
-
-
-#Xiaomi {
-    background-image: url(../img/xiaomi-14-ultra.png);
-    background-size: cover;
-    animation-delay: -3s;
-}
-
-#lemillion:hover {
+.testimonial:hover{
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
-
-
-#Tecno {
-    background-image: url(../img/tecno-phantom-v-fold.png);
-    background-size: cover;
-    animation-delay: -4s;
-}
-
-
-#Red_Riot:hover {
-    box-shadow: 0px 0px 10px rgb(255, 0, 0);
-}
-
-#S24 {
-    background-image: url(../img/s24-ultra.png);
-    background-size: cover;
-    animation-delay: -5s;
-}
-
-#todoroki:hover {
-    box-shadow: 0px 0px 10px rgb(255, 166, 0);
-}
-
-#Iphone-14 {
-    background-image: url(../img/iphone14.png);
-    background-size: cover;
-    animation-delay: -6s;
-}
-
-#deku:hover {
-    box-shadow: 0px 0px 10px rgb(0, 255, 128);
-}
-
-#Iphone {
-    background-image: url(../img/Iphone\ 15\ Pro.png);
-    background-size: cover;
-    animation-delay: -7s;
-}
-
-#bakugo:hover {
-    box-shadow: 0px 0px 10px rgb(255, 0, 0);
-}
-
-.tarjeta h3 {
-    color: white;
-    font-size: 5px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 70px;
-    background-color: #ff0000;
+.image:hover {
+    border: 2px black;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
