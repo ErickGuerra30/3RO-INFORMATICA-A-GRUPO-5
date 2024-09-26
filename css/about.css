@@ -22,13 +22,14 @@ body {
 }
 
 .container-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem; /* Controla el espacio entre los cuadros */
   padding: 50px;
   max-width: 100%;
   margin: 0 auto;
   font-size: 13px;
+  justify-content: center;
 }
 
 .container {
@@ -38,6 +39,7 @@ body {
   border-radius: 8px;
   box-sizing: border-box;
   color: black;
+  width: 40%;
 }
 .container h2{
   color: #eba842;
