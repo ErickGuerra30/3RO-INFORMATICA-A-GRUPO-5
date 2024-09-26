@@ -24,7 +24,7 @@ body {
 .container-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem; /* Controla el espacio entre los cuadros */
+  gap: 5rem; /* Controla el espacio entre los cuadros */
   padding: 50px;
   max-width: 100%;
   margin: 0 auto;
