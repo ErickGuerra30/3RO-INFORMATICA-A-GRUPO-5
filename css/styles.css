@@ -17,6 +17,8 @@ body {
 .containerslide {
     height: auto;
     width: auto;
+    margin-bottom: auto;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
