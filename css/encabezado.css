@@ -52,9 +52,17 @@ header a img {
     height: 28px;
     margin-right: -120px;
     margin-left: 0px;
+    
+    transition: transform 0.5s ease;
+    
+    
 }
 #login img{
     height: 28px;
+}
+
+#login:hover{
+    transform: scale(1.1);
 }
 nav a{
     font-size: 1.8rem;
@@ -63,12 +71,14 @@ nav a{
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
+    
 }
 
 nav a:hover,
 nav a.active{
     color: #EBA842;
     border-bottom: 3px solid #EBA842;
+    transform: scale(1.1);
 }
 
 .footer {

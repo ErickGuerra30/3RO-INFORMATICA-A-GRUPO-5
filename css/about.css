@@ -22,13 +22,15 @@ body {
 }
 
 .container-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem; /* Controla el espacio entre los cuadros */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem; /* Controla el espacio entre los cuadros */
   padding: 50px;
   max-width: 100%;
   margin: 0 auto;
   font-size: 13px;
+  justify-content: center;
+  
 }
 
 .container {
@@ -38,11 +40,16 @@ body {
   border-radius: 8px;
   box-sizing: border-box;
   color: black;
+  width: 40%;
+  transition: transform 0.5s ease;
 }
 .container h2{
   color: #eba842;
 }
 
+.image{
+  transition: transform 0.5s ease;
+}
 .containerslide {
   max-width: fit-content;
   height: 100vh;
@@ -51,9 +58,10 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #ffffff; /* Fondo blanco */
-  margin-left: 23%;
   border-radius: 8px;
   border: 2px solid #eba842;
+  align-self: center;
+
 }
 
 .testimonial {
@@ -143,7 +151,12 @@ body {
 .swiper-pagination-bullet-active {
   background-color: #f28500; /* Punto de paginación activo en naranja */
 }
-
+.image:hover{
+  transform: scale(1.1);
+}
+.container:hover{
+  transform: scale(1.1);
+}
 @media screen and (max-width: 768px) {
   .slide p {
     padding: 0 20px;

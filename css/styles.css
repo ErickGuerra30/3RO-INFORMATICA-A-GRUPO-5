@@ -17,6 +17,8 @@ body {
 .containerslide {
     height: auto;
     width: auto;
+    margin-bottom: auto;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,6 +41,7 @@ body {
     margin-top: 30px;
     height: auto;
     width: 70%;
+    transition: transform 0.5s ease;
 }
 
 .testimonial .slide {
@@ -96,10 +99,10 @@ body {
     }
 }
 
-.testimonial:hover{
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
-}
+
 .image:hover {
     border: 2px black;
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transform: scale(1.1);
+   
 }
