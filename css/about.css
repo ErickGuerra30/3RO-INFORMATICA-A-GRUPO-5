@@ -53,9 +53,10 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #ffffff; /* Fondo blanco */
-  margin-left: 23%;
   border-radius: 8px;
   border: 2px solid #eba842;
+  align-self: center;
+
 }
 
 .testimonial {
