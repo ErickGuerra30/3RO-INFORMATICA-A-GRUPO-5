@@ -21,25 +21,23 @@ body {
   min-height: 100vh;
 }
 
-.container-wrapper{
-  display:flex;
-  justify-content: center;
-  gap: 2cm;
-  padding: 20px;
-  box-sizing: border-box;
-  max-width: 1200px;
+.container-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem; /* Controla el espacio entre los cuadros */
+  padding: 50px;
+  max-width: 100%;
   margin: 0 auto;
-  color: black;
   font-size: 13px;
 }
+
 .container {
   background-color: #ffffff;
-  padding: 20px;
-  max-width: 40%;
-  border: 1px solid #ddd;
+  padding: 50px;
+  border: 2px solid #eba842;
   border-radius: 8px;
   box-sizing: border-box;
-  border: 2px solid #eba842;
+  color: black;
 }
 .container h2{
   color: #eba842;
