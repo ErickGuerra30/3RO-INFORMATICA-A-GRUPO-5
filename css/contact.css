@@ -9,8 +9,16 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
-
+.letra{
+    margin-top: -50px;
+    margin-bottom: 25px;
+}
+.letra h1{
+    color: black;
+    margin-top: auto;
+    font-size: 30px;
+    
+}
 .nav {
     display: flex;
 }

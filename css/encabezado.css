@@ -81,6 +81,53 @@ nav a.active{
     transform: scale(1.1);
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    background-color: white; /* Color de fondo del menú */
+    padding: 10px; /* Espaciado interno */
+}
+
+nav a {
+    margin: 0 15px; /* Espaciado entre enlaces */
+    text-decoration: none; /* Sin subrayado */
+    color: black; /* Color del texto */
+    position: relative; /* Necesario para el dropdown */
+}
+
+.dropdown-container {
+    position: relative; /* Necesario para el menú desplegable */
+}
+
+.dropdown {
+    display: none; /* Ocultamos el menú por defecto */
+    position: absolute;
+    top: 100%; /* Coloca el dropdown justo debajo del enlace */
+    left: 0;
+    background-color: white; /* Fondo blanco para el dropdown */
+    border: 1px solid #EBA842; /* Borde del dropdown */
+    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+}
+
+.dropdown-container:hover .dropdown {
+    display: block; /* Muestra el dropdown al pasar el mouse */
+}
+
+.dropdown a {
+    display: block; /* Cada enlace en el dropdown en bloque */
+    padding: 10px; /* Espaciado interno */
+    color: black; /* Color del texto */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.dropdown-container:hover a {
+    border-bottom: 2px solid #EBA842; /* Línea debajo del enlace al pasar el mouse */
+}
+
+.dropdown a:hover {
+    background-color: transparent; /* Sin fondo al pasar el mouse */
+    color: #EBA842; /* Cambia el color del texto al pasar el mouse */
+}
 .footer {
     width: 100%;
     position: relative;
