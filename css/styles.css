@@ -18,7 +18,7 @@ body {
     height: auto;
     width: auto;
     margin-bottom: auto;
-    margin-top: 30px;
+    margin-top: 55%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,12 +54,13 @@ body {
 .containeroferta1{
    background-color: #ffffff;
    display: flex;
-   margin-right: 65%;
+   margin-right: 60%;
    margin-top: 5%;
    margin-bottom: 5%;
    text-align: center;
    border-radius: 20px;
    flex-direction: column;
+   width: 650px;
 }
 
 .oferta1 img{
@@ -77,6 +78,28 @@ body {
     margin-top: 2%;
     margin-bottom: 4%;
     transition: transform 0.5s ease;
+}
+
+.container4ofertas{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-left: 500px;
+    gap: 20px;
+    
+}
+
+.minioferta2{
+    background-color: #ffffff;
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.oferta img{
+    width: 50%;
 }
 
 /* Botones de navegación Swiper */
