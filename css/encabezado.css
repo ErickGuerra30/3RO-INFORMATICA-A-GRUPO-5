@@ -99,6 +99,7 @@ nav a {
     position: relative; 
 }
 
+
 .dropdown {
     display: none; 
     position: absolute;
@@ -106,7 +107,7 @@ nav a {
     left: 0;
     background-color: #fff3f3;
     border: 1px solid #EBA842; 
-    z-index: 1000; 
+    z-index: 999; 
     border-radius: 5px;
 }
 
@@ -118,6 +119,7 @@ nav a {
     display: block; 
     padding: 10px;
     color: black; 
+    text-decoration: none;
     transition: background-color 0.3s, color 0.3s; 
 }
 
