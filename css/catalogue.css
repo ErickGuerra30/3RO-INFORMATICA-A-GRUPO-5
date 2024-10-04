@@ -12,14 +12,6 @@ body {
   padding-bottom: 60px;
 }
 
-.header,
-.footer {
-  width: 100%;
-  position: fixed;
-  left: 0;
-}
-
-
 .featured {
   padding: 20px;
   text-align: center;
@@ -106,6 +98,10 @@ body {
 }
 .image{
   transition: transform 0.5s ease;
+}
+
+.finales{
+  margin-top: 100px;
 }
 
 img.button {

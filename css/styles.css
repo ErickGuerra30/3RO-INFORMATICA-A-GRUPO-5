@@ -90,7 +90,7 @@ body {
     padding: 10px; /* Espaciado interno */
     gap: 50px;
     margin-left: 550px;
-    margin-top: -735px;
+    margin-top: -730px;
 }
 
 .minioferta2{
@@ -100,7 +100,7 @@ body {
     border-radius: 15px; /* Sombra para profundidad */
     
 }
-.miniofer{
+.miniofer, .logo{
     transition: transform 0.5s ease;
 }
 .oferta img{
@@ -181,6 +181,7 @@ body {
    
 }
 
-.miniofer:hover {
+.miniofer:hover, 
+.logo:hover {
     transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
 }
