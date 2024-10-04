@@ -84,50 +84,50 @@ nav a.active{
 nav {
     display: flex;
     align-items: center;
-    background-color: white; /* Color de fondo del menú */
-    padding: 10px; /* Espaciado interno */
+    background-color: white; 
+    padding: 10px; 
 }
 
 nav a {
-    margin: 0 15px; /* Espaciado entre enlaces */
-    text-decoration: none; /* Sin subrayado */
-    color: black; /* Color del texto */
-    position: relative; /* Necesario para el dropdown */
+    margin: 0 15px; 
+    text-decoration: none; 
+    color: black;
+    position: relative; 
 }
 
 .dropdown-container {
-    position: relative; /* Necesario para el menú desplegable */
+    position: relative; 
 }
 
 .dropdown {
-    display: none; /* Ocultamos el menú por defecto */
+    display: none; 
     position: absolute;
-    top: 100%; /* Coloca el dropdown justo debajo del enlace */
+    top: 100%; 
     left: 0;
-    background-color: #fff3f3; /* Fondo blanco para el dropdown */
-    border: 1px solid #EBA842; /* Borde del dropdown */
-    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+    background-color: #fff3f3;
+    border: 1px solid #EBA842; 
+    z-index: 1000; 
     border-radius: 5px;
 }
 
 .dropdown-container:hover .dropdown {
-    display: block; /* Muestra el dropdown al pasar el mouse */
+    display: block; 
 }
 
 .dropdown a {
-    display: block; /* Cada enlace en el dropdown en bloque */
-    padding: 10px; /* Espaciado interno */
-    color: black; /* Color del texto */
-    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+    display: block; 
+    padding: 10px;
+    color: black; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 .dropdown-container:hover a {
-    border-bottom: 2px solid #EBA842; /* Línea debajo del enlace al pasar el mouse */
+    border-bottom: 2px solid #EBA842; 
 }
 
 .dropdown a:hover {
-    background-color: transparent; /* Sin fondo al pasar el mouse */
-    color: #EBA842; /* Cambia el color del texto al pasar el mouse */
+    background-color: transparent; 
+    color: #EBA842; 
 }
 .footer {
     width: 100%;

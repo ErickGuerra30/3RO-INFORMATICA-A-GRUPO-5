@@ -18,7 +18,7 @@ body {
     height: auto;
     width: auto;
     margin-bottom: auto;
-    margin-top: 30%;
+    margin-top: 27%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,6 +39,7 @@ body {
 
 .image {
     margin-top: 30px;
+    margin-bottom: 50px;
     height: auto;
     width: 70%;
     transition: transform 0.5s ease;
@@ -70,7 +71,6 @@ body {
 
 .containeroferta1 h1{
     color: #f28500;
-    
 }
 
 
@@ -102,11 +102,11 @@ body {
     
 }
 .miniofer{
-    transition: transform 0.5s ease
+    transition: transform 0.5s ease;
 }
 .oferta img{
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 10%;
+    margin-bottom: 15%;
     width: 50%;
 }
 
