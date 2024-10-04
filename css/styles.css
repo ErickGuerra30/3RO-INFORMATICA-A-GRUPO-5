@@ -18,7 +18,7 @@ body {
     height: auto;
     width: auto;
     margin-bottom: auto;
-    margin-top: 55%;
+    margin-top: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,6 +60,7 @@ body {
    text-align: center;
    border-radius: 20px;
    flex-direction: column;
+   height: 800px;
    width: 650px;
 }
 
@@ -81,25 +82,36 @@ body {
 }
 
 .container4ofertas{
-    background-color: rgb(0, 0, 0);
+    background-color: transparent;
+    grid-template-columns: repeat(2, 1fr);
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    margin-left: 500px;
-    gap: 20px;
-    
+    padding: 10px; /* Espaciado interno */
+    gap: 50px;
+    margin-left: 550px;
+    margin-top: -735px;
 }
 
 .minioferta2{
     background-color: #ffffff;
-    width: 350px;
-    height: 350px;
-    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px; /* Sombra para profundidad */
+    
+}
+.miniofer{
+    transition: transform 0.5s ease
+}
+.oferta img{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 50%;
 }
 
-.oferta img{
-    width: 50%;
+.letras1 h1{
+    color: black;
 }
 
 /* Botones de navegación Swiper */
@@ -149,6 +161,12 @@ body {
     }
 }
 
+@media (min-width: 800px) {
+    .container4ofertas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    }
+}
 
 .oferta1:hover{
     transform: scale(1.1);
@@ -162,4 +180,8 @@ body {
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
     transform: scale(1.1);
    
+}
+
+.miniofer:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
 }
